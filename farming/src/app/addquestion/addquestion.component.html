@@ -1,0 +1,25 @@
+<form #userForm="ngForm" (ngSubmit)="add(userForm.value)" novalidate>
+	
+<div class="a">
+<h1>Enter Your Query Here...</h1>
+<label for="que">Query:</label><br>
+<textarea cols="60" rows="10" placeholder="Enter Product query..." name="question" [(ngModel)]="question"></textarea><br><br>
+<input type="submit" value="Post query" class="abc">
+<input type="button" value="cancle" class="abc" routerLink='/farmer'>
+</div>
+</form>
+
+
+
+<form  *ngIf="check ; else elseBlock" #userForm="ngForm" novalidate>
+	<div class="a">
+        <h1><strong>Make Your Query...</strong></h1>
+    
+    <textarea cols="60" rows="10" placeholder="Enter Query..." class="tarea" required="true" name="query" [(ngModel)]="query"></textarea><br><br>
+    
+    <input type="submit" value="{{btn1}}" (click)="onSave(userForm.value)" class="abc">
+     <input type="submit" value="{{btn2}}" (click)="show()" class="abc">
+ 
+</div>
+
+</form>

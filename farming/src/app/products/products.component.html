@@ -1,0 +1,56 @@
+<form #userForm="ngForm" (ngSubmit)="add(userForm.value)" novalidate>
+
+    <h1><strong>Add Your Product Here</strong></h1>
+
+    <fieldset>
+                <label for="As Farmer/Seller">Type:</label>
+
+        <select id="ptype" name="ptype" [(ngModel)]="ptype">
+            <option value="farmer">Farmer</option>
+            <option value="seller">Seller</option>
+        </select>
+        <label for="product name">Name:</label>
+        <input type="text" id="pname" name="pname" [(ngModel)]="pname">
+                <label for="Product unit">Unit:</label>
+
+        <select id="unit" name="unit" [(ngModel)]="unit">
+            <option value="farmer">Litre</option>
+            <option value="seller">Kg</option>
+        </select>
+
+        <label for="Price">Price</label>
+        <input type="text" id="price" name="price" [(ngModel)]="price">
+
+                    <label for="description">Description</label>
+
+    <textarea cols="60" rows="10" placeholder="Enter product description..." class="tarea" required="true" name="desp" [(ngModel)]="desp"></textarea>
+</fieldset>
+
+
+    <button type="submit" value="post product">post product</button>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form #userForm="ngForm" (ngSubmit)="add(userForm.value)" novalidate>
+	<h1>Add Your Products Here...</h1>
+
+<input type="text" name="pname" [(ngModel)]="pname"><br>
+<textarea cols="60" rows="10" placeholder="Enter Product query..." name="details" [(ngModel)]="details"></textarea><br><br>
+<input type="submit" value="Add"><br>
+</form>
+<input type="button" value="cancle" routerLink='/seller'> -->

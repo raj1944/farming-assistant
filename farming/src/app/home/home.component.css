@@ -1,0 +1,50 @@
+
+
+#rightSideWrapper {
+	/*Strictly Necessary */
+	width:84%; 
+	float: right;
+
+	/*Aesthetics*/
+	background: black;	
+}
+
+
+
+.ContentBox{
+	margin-top: 50px; /*The height of the   header*/
+	/* display:flex; */
+  /* flex-flow: row wrap; */
+} 
+
+main, section, footer {
+    /*Aesthetics*/
+	 background: lightgray; 
+	 /*border-radius: 7px;*/ 
+	 /*margin: 5px;*/ 
+	 /* padding: 0px; */
+}
+
+main {
+  /*Strictly Necessary */
+  height: 600px;
+  /* order: 1; */
+  /* flex: 0 1 100%;  */
+}
+
+section {
+  /*Strictly Necessary */
+   height: 400px;
+   order: 2;
+   flex: 0 1 100%;
+	
+}
+
+footer {
+  /*Strictly Necessary */
+  /* height: 400px; */
+  display: block;
+  order: 3;
+  flex: 0 1 100%;
+	
+}

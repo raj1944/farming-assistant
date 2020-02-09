@@ -1,0 +1,19 @@
+<h4 *ngIf="check">User name or passwor Incorrect</h4>
+<form #userForm="ngForm" (ngSubmit)="onSave(userForm.value)" novalidate>
+
+        <h1><strong>Sign In</strong></h1>
+        <img class="ggg.jpg" src="assets/image/ggg.jpg" alt="Chania" width="100%" height="603px" /> 
+    
+        <fieldset>
+        
+            <label for="uname">User Name</label>
+            <input type="text" id="uname" name="uname" [(ngModel)]="uname">
+    
+            <label for="password">Password:</label>
+            <input type="password" id="pass" name="pass" [(ngModel)]="pass">
+    
+        </fieldset>
+    
+    
+        <button type="submit">Sign In</button>
+    </form>

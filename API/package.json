@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/core": "^8.2.10",
+    "@angular/platform-browser": "^8.2.10",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^2.2.0",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.5",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@angular/http": "^7.2.15"
+  }
+}

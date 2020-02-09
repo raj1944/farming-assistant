@@ -1,0 +1,34 @@
+<header class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark" id="nhea">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-left">
+      <li class="nav-item ">
+        <a class="nav-link" (click)="home()">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/static">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/static">Contact</a>
+      </li>
+
+    </ul>
+    <ul *ngIf="check ; else elseBlock" class="nav navbar-nav navbar-right">
+      <li class="nav-item">
+        <a class="nav-link" routerLink='/profile'>{{uname}}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)='logout()'>LogOut</a>
+      </li>
+    </ul>
+    <ng-template #elseBlock>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/login'>SignIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink='/signup'>SignUp</a>
+        </li>
+      </ul>
+    </ng-template>
+  </div>
+</header>

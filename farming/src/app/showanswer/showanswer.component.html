@@ -1,0 +1,29 @@
+<!-- <div *ngFor="let kk of p1;">
+    <h1>{{kk.question}}</h1>
+    <div *ngFor="let k1 of kk.answers;">
+        <h4>{{k1.answer}}</h4>
+    </div>
+</div> -->
+
+
+<div class="w3-container">
+    <div *ngFor="let kk of p1;" class="w3-panel w3-card w3-lightgray">  
+        <h1>{{kk.question}}</h1>
+            <div *ngFor="let k1 of kk.answers;">
+                <h4>{{k1.answer}}</h4>
+            </div>
+        </div>
+</div>
+
+
+<!-- <div class="w3-container">
+    <div *ngFor="let kk of p1;" class="w3-card-4" style="width:50%;">
+        <header class="w3-container w3-green">
+            <h1>{{kk.question}}</h1>
+        </header>
+
+        <div *ngFor="let k1 of kk.answers;" class="w3-container">
+            <p>{{k1.answer}}</p>
+        </div><br>
+    </div>
+</div> -->

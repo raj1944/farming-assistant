@@ -1,0 +1,23 @@
+<table class="table" id="products">
+    <thead>
+    <tr>
+        
+        <th>Type</th>
+        <th>Name</th>
+        <th>Unit</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Remove</th>
+    </tr>
+            </thead>
+      <tbody>
+    <tr *ngFor="let kk of p1;">
+        <td>{{kk.ptype}}</td>
+        <td>{{kk.pname}}</td>
+         <td>{{kk.unit}}</td>
+        <td>{{kk.price}}</td>
+        <td>{{kk.desp}}</td>
+        <td><input type="button" (click)="delete(kk._id)" value="Delete"></td>
+    </tr>
+    </tbody>
+</table>

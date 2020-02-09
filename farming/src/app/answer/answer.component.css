@@ -1,0 +1,47 @@
+body{
+    		
+    background-color:#2bae66;
+ 
+         }
+       form
+       {
+         margin-top: 100px;
+   margin-bottom: 100px;
+   margin-right: 150px;
+   margin-left: 500px;
+       }
+         .abc
+         {
+              border: 2px solid #645463;
+              border-radius: 2cm;
+              padding: 14px 28px;
+   font-size: 16px ;
+   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+   font-weight: bold;
+   cursor: pointer;
+   color:white;
+   margin-left:115px;
+   background-color:  #55ACEE;
+   margin-top: 30px;
+              
+         }
+         .abc:hover {
+   background-color: red;
+   
+ }
+ .abc:visited
+ {background-color: blue;
+ }
+ .tarea
+ {
+     border: 3px solid #645463 ;
+ font-family: "Times New Roman", Times, serif;
+ font-size: 15px;
+    
+ 
+ }
+ h1
+ {
+   margin-bottom: 50px;
+ 
+ }

@@ -1,0 +1,10 @@
+<form #userForm="ngForm" (ngSubmit)="onSave(userForm.value)" novalidate>
+    <div class="a">
+        <h1><strong>Make Your suggesstion...</strong></h1>
+
+        <textarea cols="60" rows="10" placeholder="Enter suggesstion..." class="tarea" required="true"
+            name="suggetion" [(ngModel)]="suggetion"></textarea><br><br>
+
+            <button type="submit" value="post suggetion">post suggetion</button>
+    </div>
+</form>

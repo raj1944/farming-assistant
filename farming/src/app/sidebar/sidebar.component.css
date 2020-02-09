@@ -1,0 +1,13 @@
+#sidebar {
+	/*Strictly Necessary */
+	position:fixed; 
+  margin-top:50px;
+	width:16%;
+  height:100%;
+    float: left; 
+    text-align: center;
+
+  /*Aesthetics*/
+  background: lightblue; 
+  /*border-radius: 7px;*/  
+}

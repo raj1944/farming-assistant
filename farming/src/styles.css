@@ -1,0 +1,119 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{ 
+    margin: 0px;
+}
+
+header {
+	/*Strictly Necessary */
+	position: fixed;
+	width: 100%;	
+	height: 50px; /*Adjust the hight to your purposes*/
+	
+	/*Aesthetics*/
+	background: lightSalmon;
+	/*border-radius: 7px;*/
+}
+
+/* #sidebar {
+	/*Strictly Necessary 
+	position:fixed; 
+  margin-top:50px;
+	width:16%;
+  height:100%;
+    float: left; 
+    text-align: center;
+
+  /*Aesthetics*/
+  /* background: lightblue;  */
+  /*border-radius: 7px; 
+} */
+
+
+
+#rightSideWrapper {
+	/*Strictly Necessary */
+	width:84%; 
+	float: right;
+  height:100%;
+	/*Aesthetics*/
+	background: black;	
+}
+
+
+
+.ContentBox{
+	margin-top: 50px; /*The height of the   header*/
+	display:flex;
+    flex-flow: row wrap;
+    background: lightgray;
+    height: 100%;
+    order: 1;
+  flex: 0 1 100%;
+  padding: auto;
+} 
+
+main, section, footer {
+    /*Aesthetics*/
+	 background: white; 
+	 /*border-radius: 7px;*/ 
+	 /*margin: 5px;*/ 
+	 /* padding: 20px; */
+}
+
+main {
+  /*Strictly Necessary */
+  display: block;
+  padding: auto;
+  order: 1;
+  flex: 0 1 100%; 
+}
+
+section {
+  /*Strictly Necessary */
+   height: 400px;
+   order: 2;
+   flex: 0 1 100%;
+	
+}
+
+footer {
+  /*Strictly Necessary */
+  /* height: 400px; */
+  order: 2;
+  flex: 0 1 100%;
+	
+}
+
+.a{
+  margin-top: 50px;
+}
+
+
+#sidebar {
+  /*Strictly Necessary */
+   position:fixed;
+   overflow-y: scroll;
+  margin-top:70px;
+  width:16%;
+  height:auto;
+    float: left; 
+    text-align: center;
+  font-size:15px;
+
+
+  /*Aesthetics*/
+  background: skin; 
+
+  /*border-radius: 7px;*/  
+}
+div a.dropdown-item
+{
+    font-size:15px;
+    margin: auto;
+    font-weight: bold;
+}
+ a:hover
+ {
+  background-color: green;
+ }

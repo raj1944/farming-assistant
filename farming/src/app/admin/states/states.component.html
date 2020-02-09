@@ -1,0 +1,37 @@
+<header class="navbar navbar-inverse navbar-expand-sm bg-dark navbar-dark" id="nhea">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li class="nav-item ">
+          <a class="nav-link" (click)="home()">Login As Admin</a>
+        </li>
+  
+      </ul>
+      <ul  class="nav navbar-nav navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" (click)='logout()'>LogOut</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+<table class="table" id="customers">
+    	<thead>
+        <tr>
+        	
+            <th>Type</th>
+            <th>Name</th>
+            <th>PhoneNumber</th>
+            <th>State</th>
+            <th>Mail</th>
+        </tr>
+                </thead>
+          <tbody>
+        <tr *ngFor="let kk of p1;">
+            <td>{{kk.type}}</td>
+            <td>{{kk.uname}}</td>
+             <td>{{kk.phnno}}</td>
+            <td>{{kk.state}}</td>
+            <td>{{kk.mail}}</td>
+        </tr>
+        </tbody>
+    </table>

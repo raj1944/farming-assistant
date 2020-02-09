@@ -1,0 +1,15 @@
+<div *ngFor="let kk of p1;">
+    <h1>{{kk.question}}</h1>
+    <form *ngIf="kk.check; else elseBlock" #userForm="ngForm" (ngSubmit)="post(userForm.value,kk)" novalidate>
+            <textarea cols="60" rows="10" placeholder="write Your answer here...." class="tarea" 
+                name="answer" [(ngModel)]="answer"></textarea><br>
+            <input type="submit" value="Post Answer" class="abc">
+            <input type="submit" value="cancle" (click)="hide(kk)" class="abc">
+    </form>
+    <ng-template #elseBlock>
+        <a (click)="add(kk)" style="color:blueviolet">Add Answer</a>
+    </ng-template>
+    <hr>
+</div>
+<hr>
+<input type="button" value="cancle" class="abc" routerLink='/advisor'>

@@ -1,0 +1,59 @@
+<head>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <form  *ngIf="check ; else elseBlock" #userForm="ngForm" (ngSubmit)="onedit(userForm.value)" novalidate>
+        <fieldset>  
+               <input name="id" type="hidden" [(ngModel)]="id" />
+
+       <label for="name">Name:</label>
+       <input type="text" id="uname" name="uname" [(ngModel)]="uname">
+
+       <label for="Phone No">Phone No</label>
+       <input type="text" id="phone_no" name="phnno" [(ngModel)]="phnno">
+
+       <label for="password">Password:</label>
+       <input type="password" id="pass" name="pass" [(ngModel)]="pass">
+
+       <label for="rpassword">Confirm Password:</label>
+       <input type="password" id="repass" name="repass">
+
+       <label for="State">State</label>
+       <input type="text" id="state" name="state" [(ngModel)]="state">
+
+       <label for="email">Email</label>
+       <input type="email" id="email" name="mail" [(ngModel)]="mail">
+
+   </fieldset>
+       <button type="submit" value="Update">Update</button>
+
+</form>
+<ng-template #elseBlock>
+           <table class="table">
+       <thead>
+       <tr>
+           
+           <th>Type</th>
+           <th>Name</th>
+           <th>PhoneNumber</th>
+           <th>State</th>
+           <th>Mail</th>
+       </tr>
+               </thead>
+         <tbody>
+       <tr>
+           <td>{{p1.type}}</td>
+           <td>{{p1.uname}}</td>
+            <td>{{p1.phnno}}</td>
+           <td>{{p1.state}}</td>
+           <td>{{p1.mail}}</td>
+           <td><a (click)="edit(p1)" style="color:blueviolet">Edit</a></td>
+           
+       </tr>
+       </tbody>
+   </table>
+</ng-template>
+</body>

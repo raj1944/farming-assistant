@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<div>
+    <app-sidebar></app-sidebar>
+    <div id="rightSideWrapper">
+
+
+        <div class="ContentBox">
+            <main>
+                <header class="navbar navbar-inverse navbar-expand-sm bg-info navbar-dark" id="nhea">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="nav-item ">
+                                <a class="nav-link" (click)="show()">Show Questions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" (click)="suggetion()">Give Suggetions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header><br><br>
+                <!-- <p>helloo</p> -->
+                <router-outlet></router-outlet>
+            </main>
+
+            <!-- <section>
+                Section Content
+            </section>-->
+
+            <footer>
+                <app-footer></app-footer>
+            </footer>
+
+        </div>
+
+    </div>
+</div>
